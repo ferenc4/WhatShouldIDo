@@ -4,6 +4,23 @@ body {
     background-color: white;
 }
 
+a {
+    color: black;
+}
+
+.ghost {
+    border: 3px solid black;
+    padding: 15px 25px;
+    margin: 6px;
+    border-radius: 5px;
+    display: inline-block;
+}
+
+a > .ghost:hover {
+    background-color: black;
+    color: white;
+}
+
 .padded1 {
     padding: 40px 15px;
 }

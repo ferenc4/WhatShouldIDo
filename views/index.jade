@@ -3,3 +3,8 @@ extends layout
 block content
     h1 Hi #{name}!
     h2 What's your adventure today?
+    - var items = ["Learn something","Watch Something","Go To An Event","Go Places","Do Sports","Social media","Personal care"]
+    each item in items
+        - var target = item.split(" ").join("").toLocaleLowerCase() + ".html"
+        a(href=target)
+            div.ghost #{item}

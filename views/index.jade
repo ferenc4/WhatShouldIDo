@@ -1,10 +1,38 @@
 extends layout
 
-block content
+block greeting
     h1 Hi #{name}!
+
+block suggestion
+    - var suggestion = options[0].toLocaleLowerCase()
+    block greeting
+    h2 I think you should #{suggestion} today :)
+    br
+    a(href="#")
+        div.ghost Sure
+    a(href="#")
+        div.ghost Not Now
+
+block choice
+    block greeting
     h2 What's your adventure today?
-    - var items = ["Learn something","Watch Something","Go To An Event","Go Places","Do Sports","Social media","Personal care"]
-    each item in items
-        - var target = item.split(" ").join("").toLocaleLowerCase() + ".html"
-        a(href=target)
-            div.ghost #{item}
+    br
+    br
+    each option in options
+        a(href="#")
+            div.ghost #{option}
+
+block content
+    if type == "choice"
+        block choice
+    else if type == "suggestion"
+        block suggestion
+    else
+        h1 Are you trying to hack the site? or What?!
+
+block footer
+    if type == "choice"
+        a(href="#") Suggest me something
+    else if type == "suggestion"
+        a(href="#") Let me choose instead
+

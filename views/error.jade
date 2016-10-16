@@ -1,6 +1,10 @@
 extends layout
 
 block content
-    h1= message
-    h2= error.status
+    //h1= message
+    h1= error.status
+    h2 Oops. I think we lost that page.
+    br
+    a(href="index")
+        div.ghost Click here to go back home
     pre.left #{error.stack}

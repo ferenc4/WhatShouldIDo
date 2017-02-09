@@ -1,4 +1,6 @@
 # WhatShouldIDo
+This project is on hold at the moment.
+
 # Issue
 If we divide our time up too much for too many different hobbies during the our free time, it is really fun, but some days we wake up thinking we don't know what to do.
 Have you noticed when you are not bored you have all these things you want to do, but when you are bored you can't think of one?

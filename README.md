@@ -1,5 +1,5 @@
 # WhatShouldIDo
-This project is on hold at the moment.
+This project is on hold at the moment, until I learn data mining at university. But feel free to read//add to the requirements.
 
 # Issue
 If we divide our time up too much for too many different hobbies during the our free time, it is really fun, but some days we wake up thinking we don't know what to do.
